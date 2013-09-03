@@ -1,0 +1,16 @@
+D:\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
+D:\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb
+D:\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
+D:\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb
+C:\Users\Jon\Documents\GitHub\IntegrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
+C:\Users\Jon\Documents\GitHub\IntegrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb
+C:\Users\Jon\Documents\GitHub\IntegrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
+C:\Users\Jon\Documents\GitHub\IntegrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb
+D:\ProyectoIntegrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
+D:\ProyectoIntegrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb
+D:\ProyectoIntegrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
+D:\ProyectoIntegrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb
+C:\Users\morales\Desktop\Trabajos Fernanda\VIII Semestre 2013\Proyecto\IntégrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
+C:\Users\morales\Desktop\Trabajos Fernanda\VIII Semestre 2013\Proyecto\IntégrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\bin\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb
+C:\Users\morales\Desktop\Trabajos Fernanda\VIII Semestre 2013\Proyecto\IntégrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.dll
+C:\Users\morales\Desktop\Trabajos Fernanda\VIII Semestre 2013\Proyecto\IntégrateAlTrabajo\ProyectoBolsaTrabajo\ITCR.IntegrateAlTrabajo\ITCR.IntegrateAlTrabajo.Datos\obj\Debug\ITCR.IntegrateAlTrabajo.Datos.pdb
