@@ -13,13 +13,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
     public partial class frmEditarEstudiosAdultoMayor {
         
         /// <summary>
-        /// lblEditarEstudios control.
+        /// lblActualizarExperienciasLaborales control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEditarEstudios;
+        protected global::System.Web.UI.WebControls.Label lblActualizarExperienciasLaborales;
         
         /// <summary>
         /// PanelDatos control.
@@ -49,13 +49,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblAñoInicial1;
         
         /// <summary>
-        /// txtAñoInicialExperienciaLaboral control.
+        /// txtAñoInicialEstudio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAñoInicialExperienciaLaboral;
+        protected global::System.Web.UI.WebControls.TextBox txtAñoInicialEstudio;
         
         /// <summary>
         /// revAñoInicialEstudio control.
@@ -85,13 +85,13 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Label lblAñoFinal1;
         
         /// <summary>
-        /// txtAñoFinalExperienciaLaboral control.
+        /// txtAñoFinalEstudio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAñoFinalExperienciaLaboral;
+        protected global::System.Web.UI.WebControls.TextBox txtAñoFinalEstudio;
         
         /// <summary>
         /// revAñoFinalEstudio control.
@@ -112,22 +112,22 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvAñoFinal;
         
         /// <summary>
-        /// lblEmpresa control.
+        /// lblInstitucion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblEmpresa;
+        protected global::System.Web.UI.WebControls.Label lblInstitucion;
         
         /// <summary>
-        /// txtInstitucionExperienciaLaboral control.
+        /// txtInstitucionEstudio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtInstitucionExperienciaLaboral;
+        protected global::System.Web.UI.WebControls.TextBox txtInstitucionEstudio;
         
         /// <summary>
         /// rfvInstitucionEstudio control.
@@ -139,22 +139,22 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvInstitucionEstudio;
         
         /// <summary>
-        /// lblPuesto control.
+        /// lblTitulo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPuesto;
+        protected global::System.Web.UI.WebControls.Label lblTitulo;
         
         /// <summary>
-        /// txtTituloExperienciaLaboral control.
+        /// txtTituloEstudio control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTituloExperienciaLaboral;
+        protected global::System.Web.UI.WebControls.TextBox txtTituloEstudio;
         
         /// <summary>
         /// rfvTituloEstudio control.
@@ -202,12 +202,12 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor {
         protected global::System.Web.UI.WebControls.Panel PanelTablaDatosEstudios;
         
         /// <summary>
-        /// dgExperienciasLaborales control.
+        /// dgEstudios control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DataGrid dgExperienciasLaborales;
+        protected global::System.Web.UI.WebControls.DataGrid dgEstudios;
     }
 }
