@@ -56,6 +56,7 @@
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\Register.aspx" />
     <Content Include="AdultoMayor\frmConsultarPerfilAdultoMayor.aspx" />
+    <Content Include="AdultoMayor\frmConsultarServiciosOfrecidos.aspx" />
     <Content Include="AdultoMayor\frmEditarDatosPersonalesAdultoMayor.aspx" />
     <Content Include="AdultoMayor\frmEditarEstudiosAdultoMayor.aspx" />
     <Content Include="AdultoMayor\frmOfrecerServicios.aspx" />
@@ -125,6 +126,13 @@
     </Compile>
     <Compile Include="AdultoMayor\frmConsultarPerfilAdultoMayor.aspx.designer.cs">
       <DependentUpon>frmConsultarPerfilAdultoMayor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdultoMayor\frmConsultarServiciosOfrecidos.aspx.cs">
+      <DependentUpon>frmConsultarServiciosOfrecidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdultoMayor\frmConsultarServiciosOfrecidos.aspx.designer.cs">
+      <DependentUpon>frmConsultarServiciosOfrecidos.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdultoMayor\frmEditarDatosPersonalesAdultoMayor.aspx.cs">
       <DependentUpon>frmEditarDatosPersonalesAdultoMayor.aspx</DependentUpon>

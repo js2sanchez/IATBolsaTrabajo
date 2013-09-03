@@ -21,7 +21,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
         {
             if (!IsPostBack)
             {
-                Session["Nombre_Usuario"] = "sat";
+                Session["Nombre_Usuario"] = "Satchiss";
                 mvOfrecerServicios.ActiveViewIndex = 0;
                 cargarTodosDropDownList();
             }
@@ -142,7 +142,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
                 }
 
                 if(chkLunes.Checked){
-                    DiaServicio.Nom_Dia = chkLunes.Text;
+                    DiaServicio.Nom_Dia = "L";
                     DiaServicio.Can_Horas = byte.Parse(drpHora1.SelectedItem.Value);
                     DiaServicio.FK_IdServicio = IdServicio;
                     DiaServicio.Insertar();
@@ -150,7 +150,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
 
                 if (chkMartes.Checked)
                 {
-                    DiaServicio.Nom_Dia = chkMartes.Text;
+                    DiaServicio.Nom_Dia = "K";
                     DiaServicio.Can_Horas = byte.Parse(drpHora2.SelectedItem.Value);
                     DiaServicio.FK_IdServicio = IdServicio;
                     DiaServicio.Insertar();
@@ -158,7 +158,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
 
                 if (chkMiercoles.Checked)
                 {
-                    DiaServicio.Nom_Dia = chkMiercoles.Text;
+                    DiaServicio.Nom_Dia = "M";
                     DiaServicio.Can_Horas = byte.Parse(drpHora3.SelectedItem.Value);
                     DiaServicio.FK_IdServicio = IdServicio;
                     DiaServicio.Insertar();
@@ -166,7 +166,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
 
                 if (chkJueves.Checked)
                 {
-                    DiaServicio.Nom_Dia = chkJueves.Text;
+                    DiaServicio.Nom_Dia = "J";
                     DiaServicio.Can_Horas = byte.Parse(drpHora4.SelectedItem.Value);
                     DiaServicio.FK_IdServicio = IdServicio;
                     DiaServicio.Insertar();
@@ -174,7 +174,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
 
                 if (chkViernes.Checked)
                 {
-                    DiaServicio.Nom_Dia = chkViernes.Text;
+                    DiaServicio.Nom_Dia = "V";
                     DiaServicio.Can_Horas = byte.Parse(drpHora5.SelectedItem.Value);
                     DiaServicio.FK_IdServicio = IdServicio;
                     DiaServicio.Insertar();
@@ -182,7 +182,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.AdultoMayor
 
                 if (chkSabado.Checked)
                 {
-                    DiaServicio.Nom_Dia = chkSabado.Text;
+                    DiaServicio.Nom_Dia = "S";
                     DiaServicio.Can_Horas = byte.Parse(drpHora6.SelectedItem.Value);
                     DiaServicio.FK_IdServicio = IdServicio;
                     DiaServicio.Insertar();
