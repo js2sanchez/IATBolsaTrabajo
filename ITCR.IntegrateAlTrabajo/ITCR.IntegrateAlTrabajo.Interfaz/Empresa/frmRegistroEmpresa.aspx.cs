@@ -95,7 +95,6 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
                 Telefono.Detalle = txtTelefono.Text;
                 Telefono.FK_IdTipoContacto = 1;
                 Empresa.FK_IdDistrito = Int16.Parse(drpDistrito.SelectedValue);
-                Empresa.FK_IdUsuario = 2;
                 Empresa.PuntajePromedio = 0.00;
                 DataTable TablaNomEmpresa = Empresa.Buscar();
                 if (TablaNomEmpresa.Rows.Count.Equals(0))

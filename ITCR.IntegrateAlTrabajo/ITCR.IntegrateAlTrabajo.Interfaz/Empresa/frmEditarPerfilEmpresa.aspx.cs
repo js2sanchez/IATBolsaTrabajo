@@ -21,7 +21,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
         {
             if (!IsPostBack)
             {
-                Session["Nombre_Usuario"] = "insempresa";
+                Session["Nombre_Usuario"] = "ina";
                 mvEditarPerfil.ActiveViewIndex = 0;
                 cargarTodosDropDownList();
                 cargar_datos_usuario();
@@ -112,6 +112,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
             }
         }
 
+
         protected void btnSiguiente_Click(object sender, EventArgs e)
         {
             Validate("gvDatosGenerales");
@@ -119,13 +120,40 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
             {
                 Usuario.Nom_Usuario = Convert.ToString(Session["Nombre_Usuario"]);
                 DataTable tablaUsuario = Usuario.Buscar();
-
+                Int16 IdUsuario = 0;
                 if (tablaUsuario.Rows.Count > 0)
                 {
+                    IdUsuario = Int16.Parse(tablaUsuario.Rows[0]["Id_Usuario"].ToString());
                     txtNombreUsuario.Text = tablaUsuario.Rows[0]["Nom_Usuario"].ToString();
-                    //txtAntiguaContraseña.Text
+                    txtIndicio.Text = tablaUsuario.Rows[0]["Indicio_Contrasenna"].ToString();
                 }
-                mvEditarPerfil.ActiveViewIndex = 1;
+                Usuario.Id_Usuario = IdUsuario;
+                Empresa.FK_IdUsuario = IdUsuario;
+                DataTable tablaEmpresa = Empresa.Buscar();
+                Int16 IdEmpresa = 0;
+                if (tablaEmpresa.Rows.Count > 0)
+                {
+                    IdEmpresa = Int16.Parse(tablaEmpresa.Rows[0]["Id_Empresa"].ToString());
+                    Empresa.PuntajePromedio = float.Parse(tablaEmpresa.Rows[0]["PuntajePromedio"].ToString());
+                }
+                Empresa.Id_Empresa = IdEmpresa;
+                Empresa.Nom_Empresa = txtNombreE.Text;
+                Empresa.Num_CedulaJuridica = txtCedulaE.Text;
+                Empresa.Dsc_Empresa = txtDscE.Text;
+                CorreoElectronico.Detalle = txtEmail.Text;
+                CorreoElectronico.FK_IdTipoContacto = 3;
+                Telefono.Detalle = txtTelefono.Text;
+                Telefono.FK_IdTipoContacto = 1;
+                Empresa.FK_IdDistrito = Int16.Parse(drpDistrito.SelectedValue);
+                DataTable TablaNomEmpresa = Empresa.Buscar();
+                if (TablaNomEmpresa.Rows.Count.Equals(0))
+                {
+                    mvEditarPerfil.ActiveViewIndex = 1;
+                }
+                else
+                {
+                    Response.Write(@"<SCRIPT LANGUAGE=""JavaScript"">alert('El nombre de empresa ya existe')</SCRIPT>");
+                }
             }
         }
 
@@ -134,8 +162,45 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
             Validate("gvDatosCuenta");
             if (Page.IsValid)
             {
-                mvEditarPerfil.ActiveViewIndex = 0;
+                 Usuario.Nom_Usuario = Convert.ToString(Session["Nombre_Usuario"]);
+                DataTable tablaUsuario = Usuario.Buscar();
+                Int16 IdUsuario = 0;
+                string contraseña = "";
+                if (tablaUsuario.Rows.Count > 0)
+                {
+                    IdUsuario = Int16.Parse(tablaUsuario.Rows[0]["Id_Usuario"].ToString());
+                    contraseña = tablaUsuario.Rows[0]["Contrasenna"].ToString();
+                    Usuario.FK_IdTipoUsuario =Int16.Parse(tablaUsuario.Rows[0]["FK_IdTipoUsuario"].ToString());
+                }
+                if((txtNuevaContraseña.Text.CompareTo(txtConfirmacion.Text) == 0) && (txtAntiguaContraseña.Text.CompareTo(contraseña) == 0))
+                {
+                    Usuario.Id_Usuario = IdUsuario;
+                    Usuario.Nom_Usuario = txtNombreUsuario.Text;
+                    Usuario.Contrasenna = txtConfirmacion.Text;
+                    Usuario.Indicio_Contrasenna = txtIndicio.Text;
+                    Usuario.Estado = 2;
+                    Usuario.Actualizar();
+                    CorreoElectronico.Actualizar();
+                    Telefono.Actualizar();
+                    Empresa.Actualizar();
+                    mvEditarPerfil.ActiveViewIndex = 0;
+                }
+                else
+                {
+                    Response.Write(@"<SCRIPT LANGUAGE=""JavaScript"">alert('Las contraseñas no coinciden')</SCRIPT>");
+                }
             }
+        }
+
+        protected void drpProvincia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cargarDropDownListCantones();
+            cargarDropDownListDistritos();
+        }
+
+        protected void drpCanton_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cargarDropDownListDistritos();
         }
     }
 }

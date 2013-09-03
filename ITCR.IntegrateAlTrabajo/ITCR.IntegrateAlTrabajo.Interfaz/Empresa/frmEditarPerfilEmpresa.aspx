@@ -216,7 +216,7 @@
                                             </td>
                                             <td class="style14">
                                                 <asp:DropDownList ID="drpProvincia" runat="server" AutoPostBack="True" 
-                                                    Width="181px">
+                                                    Width="181px" onselectedindexchanged="drpProvincia_SelectedIndexChanged">
                                                 </asp:DropDownList>
                                             </td>
                                             <td class="style15">
@@ -232,7 +232,7 @@
                                             </td>
                                             <td class="style14">
                                                 <asp:DropDownList ID="drpCanton" runat="server" AutoPostBack="True" 
-                                                    Width="179px">
+                                                    Width="179px" onselectedindexchanged="drpCanton_SelectedIndexChanged">
                                                 </asp:DropDownList>
                                             </td>
                                             <td class="style15">
@@ -385,7 +385,8 @@
                                             <td class="style5">
                                                 <asp:Button ID="btnCancelarPaso2" runat="server" Text="Cancelar" />
                                                 &nbsp;
-                                                <asp:Button ID="btnFinalizarE" runat="server" Text="Finalizar" />
+                                                <asp:Button ID="btnFinalizarE" runat="server" Text="Finalizar" 
+                                                    onclick="btnFinalizarE_Click" />
                                             </td>
                                         </tr>
                                         <tr>

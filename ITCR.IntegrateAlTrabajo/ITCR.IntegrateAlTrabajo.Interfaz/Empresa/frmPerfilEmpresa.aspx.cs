@@ -24,7 +24,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
         {
             if (!IsPostBack)
             {
-                Session["Nombre_Usuario"] = "insempresa";
+                Session["Nombre_Usuario"] = "ina";
                 cargar_datos_usuario();
             }
         }
@@ -82,7 +82,7 @@ namespace ITCR.IntegrateAlTrabajo.Interfaz.Empresa
 
         protected void btnEditar_Click(object sender, EventArgs e)
         {
-
+           
         }
     }
 }
